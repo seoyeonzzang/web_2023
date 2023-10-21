@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>register</title>
@@ -10,7 +10,7 @@
       width: 800px;
       padding-left: 10px;
     }
-    .info{
+    .ta{
       margin-left: 8px;
       text-align: right;
       width: 130px;
@@ -31,30 +31,32 @@
 <p style="color:red; font-size:10px">* 필수 입력 항목</p>
 <p class="heading">기본 정보</p>
 <form name="user info"method="post">
-  <p class="info">
-    <label>이 름<span class="star">*</span> <input type="text"name="name"id="name"size="8"></label><br>
-    <label>이메일<span class="star">*</span> <input type="email"name="email"id="email"placeholder="id@domain_name" size="15"></label><br>
-    <label>암호<span class="star">*</span> <input type="password"name="password"id="password"size="12"></label><br>
-    <label>암호 확인<span class="star">*</span> <input type="password"name="password"id="password2"size="12"></label><br>
-    <label>모바일 폰<span class="star">*</span> <input type="tel"name="phone"id="phone"size="13"placeholder="010-0000-0000"></label><br>
-    <label>개인 홈페이지 <input type="url"name="homepg"id="homepg"size="30"placeholder="http://"></label><br>
-    <label>주소<span class="star">*</span> <input type="text"name="address"id="address"size="30"></label></p>
+
+  <p>
+    <label><span class="ta">이 름<span class="star">*</span></span> <input type="text"name="name"id="name"size="8"></label><br>
+    <label><span class="ta">이메일<span class="star">*</span></span> <input type="email"name="email"id="email"placeholder="id@domain_name" size="15"></label><br>
+    <label><span class="ta">암호<span class="star">*</span></span> <input type="password"name="password"id="password"size="12"></label><br>
+    <label><span class="ta">암호 확인<span class="star">*</span></span> <input type="password"name="password"id="password2"size="12"></label><br>
+    <label><span class="ta">모바일 폰<span class="star">*</span></span> <input type="tel"name="phone"id="phone"size="13"placeholder="010-0000-0000"></label><br>
+    <label><span class="ta">개인 홈페이지</span> <input type="url"name="homepg"id="homepg"size="30"placeholder="http://"></label><br>
+    <label><span class="ta">주소<span class="star">*</span></span> <input type="text"name="address"id="address"size="30"></label></p>
+
   <p class="heading">학 력</p>
-  <p class="info">
-    <label>학교 명<span class="star">*</span> <input type="text"name="school"id="school"size="12"></label><br>
-    <label>전 공<span class="star">*</span> <input type="text"name="major"id="major"size="12"></label><br>
-    <label>졸업 여부<span class="star">*</span> <select name="graduate"id="graduate">
+  <p>
+    <label><span class="ta">학교 명<span class="star">*</span></span> <input type="text"name="school"id="school"size="12"></label><br>
+    <label><span class="ta">전 공<span class="star">*</span></span> <input type="text"name="major"id="major"size="12"></label><br>
+    <label><span class="ta">졸업 여부<span class="star">*</span></span> <select name="graduate"id="graduate">
       <option value="0">---선택---</option>
       <option value="1">졸업예정</option>
       <option value="2">졸업</option>
     </select></label><br>
-    <label>졸업(예정)일 <input type="date"></label></p>
+    <label><span class="ta">졸업(예정)일</span> <input type="date"></label></p>
   <p class="heading">업무 경력</p>
-  <p class="info">
-    <label>근무업체명 <input type="text" name="company"id="company"size="20"></label><br>
-    <label>직위 <input type="text" name="spot"id="spot"size="10"></label><br>
-    <label>담당 업무 <textarea name="work"id="work" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.</textarea></label><br>
-    <label>근무년수 <input type="number" min="0" max="10" step="0.5">년</label></p>
+  <p>
+    <label><span class="ta">근무업체명</span> <input type="text" name="company"id="company"size="20"></label><br>
+    <label><span class="ta">직위</span> <input type="text" name="spot"id="spot"size="10"></label><br>
+    <label><span class="ta">담당 업무</span> <textarea name="work"id="work" cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.</textarea></label><br>
+    <label><span class="ta">근무년수</span> <input type="number" min="0" max="10" step="0.5">년</label></p>
   <p class="heading">자기소개서</p>
   <p>
     <label>첨부 파일 <input type="file" name="file"id="file"></label>
