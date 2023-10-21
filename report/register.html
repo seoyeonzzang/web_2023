@@ -5,14 +5,23 @@
     <title>register</title>
   <style>
     .heading{
-      font-weight: bold;background-color: lightblue;width: 800px;padding-left: 10px;
+      font-weight: bold;
+      background-color: lightblue;
+      width: 800px;
+      padding-left: 10px;
     }
     .info{
-      margin-left: 8px;text-align: right;width: 130px;padding-right: 8px;
+      margin-left: 8px;
+      text-align: right;
+      width: 130px;
+      padding-right: 8px;
       display:inline-block;
     }
     .foot{
       margin-left: 200px;
+    }
+    .star{
+      color: red;
     }
 
   </style>
@@ -23,18 +32,18 @@
 <p class="heading">기본 정보</p>
 <form name="user info"method="post">
   <p class="info">
-    <label>이 름* <input type="text"name="name"id="name"size="8"></label><br>
-    <label>이메일* <input type="email"name="email"id="email"placeholder="id@domain_name" size="15"></label><br>
-    <label>암호* <input type="password"name="password"id="password"size="12"></label><br>
-    <label>암호 확인* <input type="password"name="password"id="password2"size="12"></label><br>
-    <label>모바일 폰* <input type="tel"name="phone"id="phone"size="13"placeholder="010-0000-0000"></label><br>
+    <label>이 름<span class="star">*</span> <input type="text"name="name"id="name"size="8"></label><br>
+    <label>이메일<span class="star">*</span> <input type="email"name="email"id="email"placeholder="id@domain_name" size="15"></label><br>
+    <label>암호<span class="star">*</span> <input type="password"name="password"id="password"size="12"></label><br>
+    <label>암호 확인<span class="star">*</span> <input type="password"name="password"id="password2"size="12"></label><br>
+    <label>모바일 폰<span class="star">*</span> <input type="tel"name="phone"id="phone"size="13"placeholder="010-0000-0000"></label><br>
     <label>개인 홈페이지 <input type="url"name="homepg"id="homepg"size="30"placeholder="http://"></label><br>
-    <label>주소* <input type="text"name="address"id="address"size="30"></label></p>
+    <label>주소<span class="star">*</span> <input type="text"name="address"id="address"size="30"></label></p>
   <p class="heading">학 력</p>
   <p class="info">
-    <label>학교 명* <input type="text"name="school"id="school"size="12"></label><br>
-    <label>전 공* <input type="text"name="major"id="major"size="12"></label><br>
-    <label>졸업 여부* <select name="graduate"id="graduate">
+    <label>학교 명<span class="star">*</span> <input type="text"name="school"id="school"size="12"></label><br>
+    <label>전 공<span class="star">*</span> <input type="text"name="major"id="major"size="12"></label><br>
+    <label>졸업 여부<span class="star">*</span> <select name="graduate"id="graduate">
       <option value="0">---선택---</option>
       <option value="1">졸업예정</option>
       <option value="2">졸업</option>
