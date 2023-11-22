@@ -8,59 +8,61 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div class="container-sm">
-  <h2>취업 정보 계정 만들기</h2>
+<div class="container py-sm-2.5">
+  <h2 class="text-center my-3">취업 정보 계정 만들기</h2>
   <hr>
-  <div>
+  <div class="mb-3">
     <span class="text-danger">*</span>
     <span>필수 입력 항목</span>
   </div>
-  <form>
-    <div class="text-bg-primary">기본 정보</div>
-    <div>
-      <label for="name" class="form-label">이 름<span class="text-danger">*</span>
-      <input type="text" class="form-label" name="name">
-      </label>
+  <form action="...">
+    <div class="text-bg-primary p-2 my-3">기본 정보</div>
+    <div class="col-6">
+      <div>
+        <p><label for="name" class="form-label">이 름<span class="text-danger"> *</span><p>
+          <input type="text" class="form-control" id="name" size="50%">
+        </label>
+      </div>
+      <span>
+        <label for="email" class="form-label">이메일<span class="text-danger">*</span>
+          <input type="email" class="form-control" placeholder="id@domain_name" id="email">
+        </label>
+      </span>
+      <span>
+        <label for="password" class="form-label">암 호<span class="text-danger">*</span>
+          <input type="password" class="form-control" id="password">
+        </label>
+      </span>
+      <p>
+        <label for="password2" class="form-label">암호 확인<span class="text-danger">*</span>
+          <input type="password" class="form-control" id="password2">
+        </label>
+      </p>
     </div>
-    <div>
-      <label for="email" class="form-label">이메일<span class="text-danger">*</span>
-      <input type="email" class="form-label" placeholder="id@domain_name" name="email">
-      </label>
-    </div>
-    <div>
-      <label for="password" class="form-label">암 호<span class="text-danger">*</span>
-      <input type="password" class="form-label" name="password">
-      </label>
-    </div>
-    <div>
-      <label for="password2" class="form-label">암호 확인<span class="text-danger">*</span>
-      <input type="password" class="form-label" name="password2">
-      </label>
-    </div>
-    <div>
+    <p>
       <label for="phone" class="form-label">모바일 폰<span class="text-danger">*</span>
-      <input type="tel" class="form-label" placeholder="010-0000-000" name="phone">
+      <input type="tel" class="form-control" placeholder="010-0000-000" id="phone">
       </label>
-    </div>
-    <div>
+    </p>
+    <p>
       <label for="homepg" class="form-label">홈 페이지
-      <input type="text" class="form-label" placeholder="http://" name="homepg">
+      <input type="text" class="form-control" placeholder="http://" id="homepg">
       </label>
-    </div>
+    </p>
     <div>
       <label for="address" class="form-label">주 소<span class="text-danger">*</span>
-      <input type="text" class="form-label" name="address">
+      <input type="text" class="form-control" id="address">
       </label>
     </div>
-    <div class="text-bg-success">학 력</div>
+    <div class="text-bg-success p-2 my-3">학 력</div>
     <div>
       <label for="school" class="form-label">학교명<span class="text-danger">*</span>
-      <input type="text" class="form-label" name="school">
+      <input type="text" class="form-control" id="school">
       </label>
     </div>
     <div>
       <label for="major" class="form-label">전 공<span class="text-danger">*</span>
-      <input type="text" class="form-label" name="major">
+      <input type="text" class="form-control" id="major">
       </label>
     </div>
     <div>
@@ -75,7 +77,7 @@
       <label for="date" class="form-label">졸업(예정)년도<span class="text-danger">*</span>
         <input type="date" placeholder="연도. 월. 일."></label>
     </div>
-    <div class="text-bg-secondary">업무 경력</div>
+    <div class="text-bg-secondary p-2 mb-6">업무 경력</div>
     <div>
       <label for="spot" class="form-label">
         <span class="me-4">최종 직위</span>
@@ -86,17 +88,11 @@
       </label>
     </div>
     <div>
-      <label for="work" class="form-control">주요 담당 업무
-        <textarea rows="10" cols="80" name="work">담당했던 주요 업무를 기술하시오.</textarea></label>
+      <label for="work" class="form-label">주요 담당 업무
+        <textarea class="form-control" rows="10" cols="80" name="work">담당했던 주요 업무를 기술하시오.</textarea></label>
     </div>
-    <div>
-      <p class="button-center mx-4">
-        <button type="submit" class="btn btn-outline-primary">제 출</button>
-        <button type="reset" class="btn btn-outline-primary">재작성</button>
-      </p>
-
-    </div>
-
+    <button type="submit" class="btn btn-outline-primary">제 출</button>
+    <button type="reset" class="btn btn-outline-primary">재작성</button>
   </form>
 
 </body>
