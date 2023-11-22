@@ -11,7 +11,7 @@
 <div class="container py-sm-2.5">
   <h2 class="text-center my-3">취업 정보 계정 만들기</h2>
   <hr>
-  <div class="mb-3"><span class="text-danger">*</span><span>필수 입력 항목</span>
+  <div class="mb-3"><span class="text-danger">* </span><span>필수 입력 항목</span>
   </div>
   <form action="...">
     <div class="text-bg-primary p-2 mt-2">기본 정보</div><br>
@@ -22,33 +22,33 @@
           <input type="text" class="form-control my-2" id="name" size="100%">
         </label>
         </div>
-        <span>
+        <div>
           <label for="email" class="form-label my-1">이메일 <span class="text-danger">*</span>
             <input type="email" class="form-control my-2" placeholder="id@domain_name" id="email" size="100%">
           </label>
-        </span>
-        <span>
+        </div>
+        <div>
           <label for="password" class="form-label my-1">암 호<span class="text-danger">*</span>
             <input type="password" class="form-control my-2" placeholder="암호" id="password" size="100%">
           </label>
-        </span>
-        <p>
+        </div>
+        <div>
           <label for="password2" class="form-label my-1">암호 확인<span class="text-danger">*</span>
             <input type="password" class="form-control my-2" placeholder="암호 확인" id="password2" size="100%">
           </label>
-        </p>
+        </div>
       </div>
       <div class="col-sm-6">
-        <p>
+        <div>
           <label for="phone" class="form-label my-1">모바일 폰<span class="text-danger">*</span>
             <input type="tel" class="form-control my-2" placeholder="010-0000-000" id="phone" size="100%">
           </label>
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="homepg" class="form-label my-1">홈 페이지
             <input type="text" class="form-control my-2" placeholder="http://" id="homepg" size="100%">
           </label>
-        </p>
+        </div>
         <div>
           <label for="address" class="form-label my-1">주 소<span class="text-danger">*</span>
             <input type="text" class="form-control my-2" id="address" size="100%">
@@ -71,17 +71,17 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div>
-          <label for="graduate" class="form-label my-1">졸업 여부<span class="text-danger">*</span>
-            <select class="form-select my-2" name="graduate">
+        <div class="mb-3">
+          <label for="graduate" class="form-label my-2">졸업 여부<span class="text-danger">*</span></label>
+            <select class="form-select" name="graduate">
               <option value="0">--- 선택 ---</option>
               <option value="1">졸업 예정</option>
               <option value="2">졸 업</option>
-            </select></label>
+            </select>
         </div>
-        <div>
-          <label for="date" class="form-label my-1">졸업(예정)년도<span class="text-danger">*</span>
-            <input type="date" class="form-control my-4"></label>
+        <div class="mb-3">
+          <label for="date" class="form-label">졸업(예정)년도<span class="text-danger">*</span></label>
+            <input type="date" class="form-control">
         </div>
       </div>
     </div>
