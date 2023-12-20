@@ -8,43 +8,46 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
-    body {
-    margin: 0;
-    padding: 0;
-}
+    .custom-card-body {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .custom-card-body a{
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+    .custom-card-body h4 {
+        font-size: medium;
+    }
 
-header, section, footer {
+    .lunch img {
+        width: 300px;
+        padding: 10px;
+    }
+    section {
+        padding-top: 10px;
+    }
+    section, footer {
     text-align: center;
 }
 
-header {
-    background-size: 20%;
-    background-color: #f0f0f0;
-}
-
-#cta {
-    background-color: #3498db;
-    color: #fff;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #2ecc71;
-    color: #fff;
-    border: none;
+#button { padding: 10px 20px; font-size: 16px; background-color: #2ecc71; color: #fff; border: none;
 }
 footer {
     background-color: #333;
     color: #fff;
 }
+
 </style>
 <body>
 <nav class="navbar navbar-expand-sm">
     <div class="container-sm">
         <a class="navbar-brand" href="#">
-            <image src="../menu/character.JPG" style="width: 100px;" class="rounded-pill"></image></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_nav_bar">
+            <img src="../menu/character.JPG" style="width: 100px;" class="rounded-pill"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="my_navbar" class="collapse navbar-collapse">
@@ -69,7 +72,7 @@ footer {
         </div>
     </div>
 </nav>
-<section>
+<article>
     <div id="home">
         <h3>Welcome to SEOYEON's site</h3>
 
@@ -78,6 +81,8 @@ footer {
         <a>내 프로필</a>
 
     </div>
+</article>
+<article>
     <div id="dump">
         <div id="demo" class="carousel slide" style="text-align: center" data-bs-ride="carousel">
             <!-- Indicators/dots-->
@@ -117,7 +122,7 @@ footer {
                 </div>
             </div>
             <!--left and right controls/icons-->
-            <button class="carousel-control-prev btn btn-outline-primary" type="button" data-bs-target="#demo" data-bs-slide="preview">
+            <button class="carousel-control-prev btn btn-outline-primary" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
             <button class="carousel-control-next btn btn-outline-primary" type="button" data-bs-target="#demo" data-bs-slide="next">
@@ -125,50 +130,68 @@ footer {
             </button>
         </div>
     </div>
+</article>
+<article>
     <div id="music" class="d-flex justify-content-around">
         <div class="card" style="width: 300px">
-            <img class="card-img-top" src="music/jaebeom.jpg" style="width: 100%">
-            <div class="card-body">
+            <img class="card-img" src="music/jaebeom.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
                 <h4 class="card-title">이 밤이 지나면 - 임재범</h4>
                 <a href="https://www.youtube.com/watch?v=Wu_Y02C2VwM" class="btn btn-secondary">같이 듣기</a>
             </div>
         </div>
         <div class="card" style="width: 300px">
-            <img class="card-img-top" src="music/jiwon.jpg" style="width: 100%">
-            <div class="card-body">
+            <img class="card-img" src="music/jiwon.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
                 <h4 class="card-title">사랑했나봐 - 은지원</h4>
                 <a href="https://www.youtube.com/watch?v=dJ5wIpwZKdI" class="btn btn-secondary">같이 듣기</a>
             </div>
         </div>
         <div class="card" style="width: 300px">
-            <img class="card-img-top" src="music/nayeon.jpg" style="width: 100%">
-            <div class="card-body">
+            <img class="card-img" src="music/nayeon.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
                 <h4 class="card-title">Love Countdown - 나연</h4>
                 <a href="https://www.youtube.com/watch?v=D6KP4btz2eY" class="btn btn-secondary">같이 듣기</a>
             </div>
         </div>
         <div class="card" style="width: 300px">
-            <img class="card-img-top" src="music/pong.jpg" style="width: 100%">
-            <div class="card-body">
+            <img class="card-img" src="music/pong.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
                 <h4 class="card-title">푱푱 - 라붐</h4>
                 <a href="https://www.youtube.com/watch?v=VSYoDqkbzzg" class="btn btn-secondary">같이 듣기</a>
             </div>
         </div>
         <div class="card" style="width: 300px">
-            <img class="card-img-top" src="music/sweden.jpg" style="width: 100%">
-            <div class="card-body">
+            <img class="card-img" src="music/sweden.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
                 <h4 class="card-title">그래도 나 사랑하지 - 스웨덴세탁소</h4>
                 <a href="https://www.youtube.com/watch?v=_-anr5vmXM8" class="btn btn-secondary">같이 듣기</a>
             </div>
         </div>
     </div>
-    <div id="review">
-        <a>맛집 리뷰</a>
+</article>
+<article>
+    <div class="container mt-5 lunch" id="review">
+        <h3>학교 다니면서 먹었던 점심 메뉴를 공개 합니다</h3>
+        <div>점수는 5점 만점, 재방문 의사는 X 라고 무조건 비추천 한다는 뜻은 아님~!! (그냥 저라면 안 갈 것 같네요오..)</div>
+
+        <img src="../menu/cheongsu.jpg" data-bs-toggle="tooltip" title="<청수냉면><br>가격: 4<br>맛: 5<br>재방문 의사: O" data-bs-html="true">
+        <img src="../menu/haksik.jpg" data-bs-toggle="tooltip" title="<학식><br>가격: 3<br>맛: 3<br>재방문 의사: O"data-bs-html="true">
+        <img src="../menu/obong.jpg" data-bs-toggle="tooltip" title="<오봉집><br>가격: 2<br>맛: 5<br>재방문 의사: O"data-bs-html="true">
+        <img src="../menu/omaetteok.jpg" data-bs-toggle="tooltip" title="<오매떡><br>가격: 2<br>맛: 4<br>재방문 의사: X"data-bs-html="true">
+        <img src="../menu/rhqckd.jpg" data-bs-toggle="tooltip" title="<홍곱창><br>가격: 2<br>맛: 3<br>재방문 의사: X"data-bs-html="true">
+
+        <script>
+            var tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl){
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        </script>
     </div>
     <h2>Sign Up Now!</h2>
     <p>Join us and experience the future.</p>
     <button id="signupBtn">Sign Up</button>
-</section>
+</article>
 <footer>
     <p>&copy; 2023 Your Company. All rights reserved.</p>
 </footer>
