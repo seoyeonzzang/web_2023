@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../.idea/profile.css" rel="stylesheet">
+    <link rel="icon" href="../menu/sicon.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../menu/sicon.jpg" type="image/x-icon">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script>
+        function message(){
+            alert("오늘 하루도 수고하셨습니다 - ♥");
+        }
+    </script>
+</head>
+<style>
+    header {
+        font-family: Rockwell;
+    }
+    #home {
+        font-family: "Arial Black";
+        margin: 20px;
+    }
+    #tamama {
+        width: 1000px;
+        margin-bottom: 30px;
+    }
+    .custom-card-body {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .custom-card-body a{
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+    .custom-card-body h4 {
+        font-size: medium;
+    }
+    .lunch img {
+        width: 500px;
+        padding: 10px;
+    }
+    .menu {
+        background-color: lightgray;
+        padding-bottom: 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: center;
+        letter-spacing: 8px;
+    }
+    article {
+        margin: 20px;
 
+    }
+    section, aside, footer {
+    text-align: center;
+}
+
+</style>
+<body>
+<div class="container-sm">
+    <header>
+        <nav class="navbar navbar-expand-sm">
+             <a class="navbar-brand" href="#">
+                    <img src="../menu/character.JPG" style="width: 120px;" class="rounded-pill"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_navbar">
+                    <span class="navbar-toggler-icon"></span>
+              </button>
+                <div id="my_navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a></li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#profile">Me!!</a></li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#dump">Photodump</a></li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="#music">Playlist</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Homework</a>
+                        <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://seoyeonzzang.github.io/web_2023/report/HW/">HW01</a></li>
+                                    <li><a class="dropdown-item" href="https://seoyeonzzang.github.io/web_2023/report/HW/register.html">HW02</a></li>
+                                    <li><a class="dropdown-item" href="https://seoyeonzzang.github.io/web_2023/report/HW/register.html">HW03(HW02코드수정)</a></li>
+                                    <li><a class="dropdown-item" href="https://seoyeonzzang.github.io/web_2023/report/HW/HW4">HW04</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review">Review</a></li>
+                </ul>
+            </div>
+    </nav>
+</header>
+
+<section>
+    <article>
+        <div id="home"><h3>Welcome to SEOYEON's homepage!</h3></div>
+        <img src="../menu/tamama.jpg" id="tamama">
+    </article>
+    <article>
+        <div id="profile" class="row">
+            <div class="menu h3 p-3">서연이의 자기소개서</div>
+            <img src="../menu/selfie.jpg" style="width: 33%; height: 33%; margin-left: auto">
+            <div class="col-4 text-bg-secondary">
+             <h5><span>이름:</span> 김서연(Kim Seoyeon)<br><span>생일:</span> 2002.06.27 <br><span>나이:</span> 만 21세 <br>
+                 <span>MBTI:</span> ENFP<br><span>학교:</span> 동덕여자대학교 <br><span>전공:</span> 정보통계학과 <br><span>주소:</span> 서울시 중랑구</h5>
+            </div>
+            <div class="col-4 text-bg-secondary me-auto">
+                <h5><span>좋아하는 가수:</span> ENHYPEN, BOYNEXTDOOR<br><span>좋아하는 음식:</span> 쇠고기미역국, 치킨<br>
+                    <span>좋아하는 운동:</span> 수영, 발레<br><span>좋아하는 계절:</span> 여름<br><span>좋아하는 우유:</span> 커피우유<br>
+                    <span>좋아하는 해장 푸드:</span> 냉면</h5>
+            </div>
+         </div>
+    </article>
+    <article>
+        <div id="dump">
+        <div id="demo" class="carousel slide my-5" style="text-align: center" data-bs-ride="carousel">
+            <div class="menu h3 p-3 mt-5">서연이의 2023 in 동덕</div>
+            <!-- Indicators/dots-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            </div>
+            <!--The slide show carousel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../menu/sansi.jpg" class="d-block mx-auto" style="width: 70%; height: auto">
+                    <div class="carousel-caption"><p>통계청 견학</p></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../menu/sansi2.jpg" class="d-block mx-auto" style="width: 70%; height: auto">
+                    <div class="carousel-caption"><p>산업시찰 photo by 동기언니</p></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../menu/somsom.jpg" class="d-block mx-auto" style="width: 70%; height: auto">
+                    <div class="carousel-caption"><p>with 솜솜♥</p></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../menu/cat.jpg" class="d-block mx-auto" style="width: 70%; height: auto">
+                    <div class="carousel-caption"><p>학교에서 태어난 아기고양이</p></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../menu/ghlrl.jpg" class="d-block mx-auto" style="width: 70%; height: auto">
+                    <div class="carousel-caption"><p>동기와 첫술</p></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../menu/gnans.jpg" class="d-block mx-auto" style="width: 70%; height: auto">
+                    <div class="carousel-caption"><p>후문도 꽃이 있다구요!</p></div>
+                </div>
+            </div>
+            <!--left and right controls/icons-->
+            <button class="carousel-control-prev btn btn-outline-primary" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next btn btn-outline-primary" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    </article>
+    <article>
+        <div id="music" class="menu h3 p-3 mt-5">서연이가 좋아하는 노래 5곡 추천 ~.~</div>
+        <div id="music2" class="d-flex justify-content-around p-2">
+        <div class="card" style="width: 300px">
+            <img class="card-img" src="../music/jaebeom.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
+                <h4 class="card-title">이 밤이 지나면 - 임재범</h4>
+                <a href="https://www.youtube.com/watch?v=Wu_Y02C2VwM" class="btn btn-secondary">같이 듣기</a>
+            </div>
+        </div>
+        <div class="card" style="width: 300px">
+            <img class="card-img" src="../music/jiwon.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
+                <h4 class="card-title">사랑했나봐 - 은지원</h4>
+                <a href="https://www.youtube.com/watch?v=dJ5wIpwZKdI" class="btn btn-secondary">같이 듣기</a>
+            </div>
+        </div>
+        <div class="card" style="width: 300px">
+            <img class="card-img" src="../music/nayeon.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
+                <h4 class="card-title">Love Countdown - 나연</h4>
+                <a href="https://www.youtube.com/watch?v=D6KP4btz2eY" class="btn btn-secondary">같이 듣기</a>
+            </div>
+        </div>
+        <div class="card" style="width: 300px">
+            <img class="card-img" src="../music/pong.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
+                <h4 class="card-title">푱푱 - 라붐</h4>
+                <a href="https://www.youtube.com/watch?v=VSYoDqkbzzg" class="btn btn-secondary">같이 듣기</a>
+            </div>
+        </div>
+        <div class="card" style="width: 300px">
+            <img class="card-img" src="../music/sweden.jpg" style="width: 100%">
+            <div class="card-body custom-card-body">
+                <h4 class="card-title">그래도 나 사랑하지 - 스웨덴세탁소</h4>
+                <a href="https://www.youtube.com/watch?v=_-anr5vmXM8" class="btn btn-secondary">같이 듣기</a>
+            </div>
+        </div>
+    </div>
+    </article>
+
+    <article>
+        <div class="container mt-5 lunch" id="review">
+        <div class="menu h3 p-3">학교에서 먹었던 점심 메뉴와 후기</div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="../menu/cheongsu.jpg" data-bs-toggle="tooltip" title="<청수냉면><br>가격: 3<br>맛: 5<br>재방문 의사: O" data-bs-html="true">
+                    <img src="../menu/haksik.jpg" data-bs-toggle="tooltip" title="<학식><br>가격: 3<br>맛: 3<br>재방문 의사: O" data-bs-html="true">
+                    <img src="../menu/obong.jpg" data-bs-toggle="tooltip" title="<오봉집><br>가격: 2<br>맛: 5<br>재방문 의사: O" data-bs-html="true">
+                    <img src="../menu/omaetteok.jpg" data-bs-toggle="tooltip" title="<오매떡><br>가격: 2<br>맛: 4<br>재방문 의사: X" data-bs-html="true">
+                </div>
+                <div class="col-6">
+                    <img src="../menu/rhqckd.jpg" data-bs-toggle="tooltip" title="<홍곱창><br>가격: 2<br>맛: 3<br>재방문 의사: X" data-bs-html="true">
+                    <img src="../menu/tori.jpg" data-bs-toggle="tooltip" title="<토리돈까스><br>가격: 3<br>맛: 5<br>재방문 의사: O" data-bs-html="true">
+                    <img src="../menu/bunsil.jpg" data-bs-toggle="tooltip" title="<월곡동분식><br>가격: 4<br>맛: 4<br>재방문 의사: O" data-bs-html="true">
+                    <img src="../menu/misoya.jpg" data-bs-toggle="tooltip" title="<미소야><br>가격: 3<br>맛: 4<br>재방문 의사: X" data-bs-html="true">
+                </div>
+
+            </div>
+
+        <script>
+            var tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl){
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        </script>
+    </div>
+    </article>
+</section>
+<footer>
+    <h2>방문해주셔서 감사합니다!</h2>
+    <p>아래 버튼을 눌러보세요</p>
+    <button id="msgbtn" class="btn btn-outline-dark mb-4">♡♥♡♥♡♥</button>
+</footer>
+ <script>
+     document.getElementById('msgbtn').addEventListener('click', message);
+ </script>
+</div>
+
+
+</body>
+</html>
