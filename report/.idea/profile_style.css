@@ -3,7 +3,7 @@
     }
     #profile h5 {
         text-align: left;
-        max-block-size: auto;
+        max-height: auto;
         margin: 150px auto;
         font-family: "DejaVu Serif", serif;
         letter-spacing: 8px;
