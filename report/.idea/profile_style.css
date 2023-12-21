@@ -1,0 +1,13 @@
+    #profile {
+        display: flex;
+        text-align: left;
+        font-family: "DejaVu Serif", serif;
+        letter-spacing: 8px;
+    }
+    #profile h5 {
+        max-block-size: auto;
+        margin: 150px auto;
+    }
+    #profile span {
+        font-weight: bold;
+    }
